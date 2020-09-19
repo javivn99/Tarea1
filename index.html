@@ -9,7 +9,7 @@
     <style>
         /* Encabezado */
         .fondo1 {
-            background-image: url(imagenes/fondo1.jpg);
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(imagenes/fondo1.jpg);
             background-repeat: no-repeat;
             background-size: cover;
             margin: auto;
@@ -17,9 +17,7 @@
             padding-right: 0 !important;
             width: 100% !important;
             padding-bottom: 20px;
-            background-position:bottom;
-
-
+            background-position: bottom;
         }
 
         .recuadro {
@@ -48,7 +46,7 @@
         }
 
         .fondo2 {
-            background-image: url(imagenes/fondo2.jpg);
+            background-image:  linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(imagenes/fondo2.jpg);
             background-repeat: no-repeat;
             background-size: cover;
             margin: auto;
@@ -60,6 +58,7 @@
             font-size: 25px;
             padding-bottom: 20px;
             padding-top: 20px;
+            background-position: center;
         }
 
         .cervantes {
@@ -80,18 +79,16 @@
 
             margin: auto;
             background-color: lightgray;
-
-            /*-------------BORRAR ESTO*/
             border-collapse: collapse;
-            
-
         }
-        /*------------BORRAR ESTO*/
+
+
+        /*------------BORRAR ESTO
         td,
-        th{
+        th {
             border: 3px solid black;
         }
-
+*/
         th {
             color: grey;
             text-align: center;
@@ -110,9 +107,17 @@
         }
 
         .imagenes2 {
-            text-align: right;
+            text-align: left;
             padding-bottom: 10px;
         }
+
+        .imgPadding1{
+            padding-right: 10px ;
+        }
+        .imgPadding2{
+            padding-left: 10px;
+        }
+        
     </style>
 
 </head>
@@ -139,12 +144,20 @@
         <tbody>
             <tr>
                 <td class="restaurantTxt" rowspan="2"><b>EL RESTAURANTE</b></td>
-                <td class="imagenes1"><p><img src="imagenes/tatin-01.jpg" height="300" width="400" /></p></td>
-                <td class="imagenes1"><p><img src="imagenes/tatin-02.jpg" height="300" width="400" /></p></td>
+                <td class="imagenes1">
+                    <p class="imgPadding1"></p><img src="imagenes/tatin-01.jpg" height="300" width="400" /></p>
+                </td>
+                <td class="imagenes2">
+                    <p class="imgPadding2"><img src="imagenes/tatin-02.jpg" height="300" width="400" /></p>
+                </td>
             </tr>
             <tr>
-                <td class="imagenes2"><img src="imagenes/tatin-03.jpg" height="150" width="275" /></td>
-                <td class="imagenes2"><img src="imagenes/tatin-04.jpg" height="150" width="275" /></td>
+                <td class="imagenes1">
+                    <p class="imgPadding3"><img src="imagenes/tatin-03.jpg" height="150" width="275" /></p>
+                </td>
+                <td class="imagenes2">
+                    <p class="imgPadding4"><img src="imagenes/tatin-04.jpg" height="150" width="275" /></p>
+                </td>
             </tr>
         </tbody>
     </table>
