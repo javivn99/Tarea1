@@ -7,7 +7,6 @@
     <title>Restaurante</title>
 
     <style>
-
         /* Encabezado */
         .fondo1 {
             background-image: url(imagenes/fondo1.jpg);
@@ -18,7 +17,8 @@
             padding-right: 0 !important;
             width: 100% !important;
             padding-bottom: 20px;
-            
+            background-position:bottom;
+
 
         }
 
@@ -30,7 +30,7 @@
             width: 25%;
             padding-top: 5px;
             padding-bottom: 5px;
-            
+
 
         }
 
@@ -66,7 +66,7 @@
             border-radius: 40px;
         }
 
-        .fuenteNueva{
+        .fuenteNueva {
             font-family: caveat;
         }
 
@@ -74,21 +74,52 @@
             font-size: 20px;
         }
 
-        /* Cabecero tabla */
+        /* Tabla */
 
-        #th {
-            color: grey;
-            text-align: center;
+        table {
+
+            margin: auto;
+            background-color: lightgray;
+
+            /*-------------BORRAR ESTO*/
+            border-collapse: collapse;
+            
+
+        }
+        /*------------BORRAR ESTO*/
+        td,
+        th{
+            border: 3px solid black;
         }
 
+        th {
+            color: grey;
+            text-align: center;
+            padding-top: 25px;
+            padding-bottom: 40px;
+        }
 
+        .restaurantTxt {
+            text-align: left;
+            padding-left: 20px;
+            color: darkslategrey;
+        }
 
-        
+        .imagenes1 {
+            text-align: right;
+        }
+
+        .imagenes2 {
+            text-align: right;
+            padding-bottom: 10px;
+        }
     </style>
 
 </head>
 
+
 <body>
+    <!-- Encabezado -->
     <div class="fondo1">
         <img class="tatin" src="imagenes/logo-tatin.png" height="35" width="85" />
         <div class="recuadro">
@@ -97,7 +128,8 @@
         </div>
     </div>
 
-    <table>
+    <!-- Tabla -->
+    <table cellspacing="1" style="border-collapse: collapse" width="100%" height="100%">
         <thead>
             <tr>
                 <th colspan="3">Ven a probar la mejor pasta de Valladolid</th>
@@ -106,11 +138,18 @@
 
         <tbody>
             <tr>
-                <td rowspan="2">EL RESTAURANTE</td>
+                <td class="restaurantTxt" rowspan="2"><b>EL RESTAURANTE</b></td>
+                <td class="imagenes1"><p><img src="imagenes/tatin-01.jpg" height="300" width="400" /></p></td>
+                <td class="imagenes1"><p><img src="imagenes/tatin-02.jpg" height="300" width="400" /></p></td>
+            </tr>
+            <tr>
+                <td class="imagenes2"><img src="imagenes/tatin-03.jpg" height="150" width="275" /></td>
+                <td class="imagenes2"><img src="imagenes/tatin-04.jpg" height="150" width="275" /></td>
             </tr>
         </tbody>
     </table>
 
+    <!-- Pie de pagina -->
     <div class="fondo2">
         <p class="fuenteNueva">"No existe plato desdeñado en la cocina cuando se realiza de manera autentica"</p>
         <img class="cervantes" src="imagenes/miguel-de-cervantes.jpg" height="40" width="40" />
