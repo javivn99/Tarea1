@@ -7,33 +7,82 @@
     <title>Restaurante</title>
 
     <style>
+
+        /* Encabezado */
         .fondo1 {
             background-image: url(imagenes/fondo1.jpg);
             background-repeat: no-repeat;
             background-size: cover;
+            margin: auto;
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+            width: 100% !important;
+            padding-bottom: 20px;
+            
+
+        }
+
+        .recuadro {
+            background-color: darkcyan;
+            text-align: center;
+            color: white;
+            margin: auto;
+            width: 25%;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            
+
+        }
+
+        /* Pie de pagina */
+        .tatin {
+            display: block;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            margin: auto;
+        }
+
+        @font-face {
+            font-family: caveat;
+            src: url(fonts/caveat.woff2);
         }
 
         .fondo2 {
             background-image: url(imagenes/fondo2.jpg);
             background-repeat: no-repeat;
             background-size: cover;
-            margin:auto;
-        }
-
-        .recuadro{
-            background-color: darkcyan ;
+            margin: auto;
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+            width: 100% !important;
             text-align: center;
-            color:white;
-            margin:auto;
-            width:25%;
-
+            color: greenyellow;
+            font-size: 25px;
+            padding-bottom: 20px;
+            padding-top: 20px;
         }
-        .tatin{
-            display:block;
 
-
-margin:auto;
+        .cervantes {
+            border-radius: 40px;
         }
+
+        .fuenteNueva{
+            font-family: caveat;
+        }
+
+        .cervLetras {
+            font-size: 20px;
+            padding-top: ;
+        }
+
+        /* Cabecero tabla */
+
+        #th {
+            color: grey;
+            text-align: center;
+        }
+
+
 
         
     </style>
@@ -42,15 +91,31 @@ margin:auto;
 
 <body>
     <div class="fondo1">
-        <img class="tatin" src="imagenes/logo-tatin.png" height="75" width="75"/>
+        <img class="tatin" src="imagenes/logo-tatin.png" height="35" width="85" />
         <div class="recuadro">
-            <p>PROMOCION EN PEDIDOS A RECOGER</p>
-            <p>POR CADA DOS PIZZAS, LLEVATE OTRA DE REGALO O UNA BOTELLA DE LAMBRUSCO</p>
+            <p>PROMOCION <br> EN PEDIDOS A RECOGER</p>
+            <p><b>POR CADA DOS PIZZAS, LLEVATE OTRA DE REGALO</b> <br> <b>O UNA BOTELLA DE LAMBRUSCO</b></p>
         </div>
     </div>
 
+    <table>
+        <thead>
+            <tr>
+                <th colspan="3">Ven a probar la mejor pasta de Valladolid</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td rowspan="2">EL RESTAURANTE</td>
+            </tr>
+        </tbody>
+    </table>
+
     <div class="fondo2">
-        <p>"No existe plato desdeñado en la cocina cuando se realiza de manera autentica"</p>
+        <p class="fuenteNueva">"No existe plato desdeñado en la cocina cuando se realiza de manera autentica"</p>
+        <img class="cervantes" src="imagenes/miguel-de-cervantes.jpg" height="40" width="40" />
+        <p class="cervLetras">MIGUEL DE CERVANTES</p>
     </div>
 </body>
 
