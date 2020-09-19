@@ -1,0 +1,122 @@
+/* Encabezado */
+.fondo1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(../imagenes/fondo1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: auto;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    width: 100% !important;
+    padding-bottom: 20px;
+    background-position: bottom;
+}
+
+.recuadro {
+    background-color: darkcyan;
+    text-align: center;
+    color: white;
+    margin: auto;
+    width: 25%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+
+}
+
+/* Pie de pagina */
+.tatin {
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: auto;
+}
+
+@font-face {
+    font-family: caveat;
+    src: url(fonts/caveat.woff2);
+}
+
+.fondo2 {
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(../imagenes/fondo2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: auto;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    width: 100% !important;
+    text-align: center;
+    color: greenyellow;
+    font-size: 25px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    background-position: center;
+}
+
+.cervantes {
+    border-radius: 40px;
+}
+
+.fuenteNueva {
+    font-family: caveat;
+}
+
+.cervLetras {
+    font-size: 20px;
+}
+
+/* Tabla */
+
+table {
+
+    margin: auto;
+    background-color: lightgray;
+    border-collapse: collapse;
+}
+
+
+/*------------BORRAR ESTO
+td,
+th {
+    border: 3px solid black;
+}
+*/
+th {
+    color: grey;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 40px;
+}
+
+.restaurantTxt {
+    text-align: left;
+    padding-left: 20px;
+    color: darkslategrey;
+}
+
+.imagen1 {
+    text-align: right;
+    margin-bottom: 0px;
+    padding-right: 10px ;
+    margin-top: 0px;
+    position: bottom;
+
+}
+
+.imagen2 {
+    text-align: left;
+    margin-bottom: 0px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    
+}
+
+.imagen3 {
+    text-align: right;
+    margin-top: 0px;
+    position: top;
+}
+
+.imagen4 {
+    text-align: left;
+    margin-top: 0px;
+}
