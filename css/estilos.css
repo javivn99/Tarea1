@@ -1,6 +1,7 @@
 /* Encabezado */
+
 .fondo1 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(../imagenes/fondo1.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../imagenes/fondo1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     margin: auto;
@@ -19,11 +20,10 @@
     width: 25%;
     padding-top: 5px;
     padding-bottom: 5px;
-
-
 }
 
 /* Pie de pagina */
+
 .tatin {
     display: block;
     padding-top: 20px;
@@ -37,7 +37,7 @@
 }
 
 .fondo2 {
-    background-image:  linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(../imagenes/fondo2.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../imagenes/fondo2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     margin: auto;
@@ -67,12 +67,10 @@
 /* Tabla */
 
 table {
-
     margin: auto;
     background-color: lightgray;
     border-collapse: collapse;
 }
-
 
 /*------------BORRAR ESTO
 td,
@@ -80,6 +78,7 @@ th {
     border: 3px solid black;
 }
 */
+
 th {
     color: grey;
     text-align: center;
@@ -96,27 +95,27 @@ th {
 .imagen1 {
     text-align: right;
     margin-bottom: 0px;
-    padding-right: 10px ;
-    margin-top: 0px;
+    padding-right: 15px;
     position: bottom;
-
 }
 
 .imagen2 {
     text-align: left;
     margin-bottom: 0px;
-    padding-left: 10px;
+    padding-left: 15px;
     padding-bottom: 10px;
-    
+    position: bottom;
 }
 
 .imagen3 {
     text-align: right;
     margin-top: 0px;
     position: top;
+    
 }
 
 .imagen4 {
     text-align: left;
     margin-top: 0px;
+    position: top;
 }
